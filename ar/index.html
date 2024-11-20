@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preload" as="fetch" href="./model/floor3.glb" type="model/gltf-binary" crossorigin="anonymous">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <title>Vite App</title>
+</head>
+
+<body>
+    <a href="/index.html" class="absolute z-20 bottom-3 left-5 bg-white px-8 py-2">Back</a>
+    <model-viewer id="ar" src="/model/floor3.glb" ar modes="scene-viewer quick-look webxr" touch-action="pan-y"
+        reveal="manual" auto-rotate shadow-intensity="1" class="relative bottom-0" camera-controls camera-position="0 50 0">
+        <button slot="ar-button" id="ar-button" class="absolute z-20 bottom-3 right-5 bg-white px-8 py-2">
+            View AR 360&deg;
+        </button>
+    </model-viewer>
+</body>
+
+</html>
